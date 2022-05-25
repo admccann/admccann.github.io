@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- the head of the document stores functional information that is largely invisible -->
+  <head>
+    <!-- character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Meta tags define metadata for an html document -->
+
+    <!-- CSS style sheets tell your page how you want it to look -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- This is what the webpage is about and is important for Search Engine Optimization -->
+    <title>Santa Monica Designs</title>
+
+    <meta name="description" content="Order page for a T-Shirt Business" />
+
+    <!-- This helps with smart devices like iPad, tablets, smart phones, etc... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="JavaScript/validationForm2.js" defer></script>
+  </head>
+
+  <!-- The body of the document is where the page's visible content goes -->
+
+  <!-- the body class contains specific elements for the body. This also contains css classes to change the way it looks -->
+  <body>
+    <div class="container">
+      <header>
+        <div class="center">
+          <img
+            src="Images/SantaMonicaLogoBOLD.png"
+            alt="Santa Monica Designs Logo"
+            width="450"
+          />
+        </div>
+      </header>
+      <!-- this is the main center section of the page -->
+      <main>
+        <h2>Tiny babies need tiny Baby Tee's!</h2>
+        <p>
+          Our baby onesies are of the highest quality organic cotton and are the
+          perfect canvas for your custom designs, and our shipping is always
+          free!<br /><br />
+          Place your order below and feel free to reach out to us at 555-BABYTEE
+          if you would like a special order that includes our custom printing!
+        </p>
+        <!-- the div tag is used to create a generic container -->
+        <div id="product">
+          <!-- this div also has a class included that adds a background color -->
+          <div class="col">
+            <!-- These are images of a baby onesies (I made them myself!) They are optimized at 288 x 384 and 72px resolution-->
+            <figure>
+              <img src="Images/newHerecopy.jpg" alt="Baby onesie with design" />
+            </figure>
+          </div>
+
+          <div class="col">
+            <figure>
+              <img
+                src="Images/onesieGroup.jpg"
+                alt="Collection of baby onesies with different designs"
+              />
+            </figure>
+          </div>
+        </div>
+        <!-- this assigns the entire form an ID so it can be used in JavaScript -->
+        <form class="cart" id="shop-babytees">
+          <!-- This is a text form -->
+          <fieldset>
+            <legend>Customer information:</legend>
+            <label for="custname">First Name</label>
+            <input name="custname" id="custname" type="text" />
+            <br />
+
+            <label for="custlastname">Last Name</label>
+            <input name="custlastname" id="custlastname" type="text" />
+            <br />
+
+            <!-- this is an email form -->
+            <label for="custemail">Email</label>
+            <input
+              name="custemail"
+              id="custemail"
+              type="email"
+              placeholder="me@example.com"
+            />
+            <br />
+          </fieldset>
+          <br />
+
+          <!-- this is a checkbox list form -->
+          <fieldset>
+            <legend>
+              Choose Your Baby Tee! Please select at least one item.
+            </legend>
+            <input
+              class="radio"
+              id="newborncheck"
+              name="newborncheckboxlist"
+              type="checkbox"
+              value="5"
+            />
+            <label for="newborncheck">Newborn - $5 each</label>
+            <br />
+            <!-- this is a drop down combo select form -->
+            <label for="qnewborn">Quantity:</label>
+
+            <select name="qnewborn" id="qnewborn">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <br />
+            <br />
+            <input
+              class="radio"
+              id="3to6monthscheck"
+              name="3to6monthscheckboxlist"
+              type="checkbox"
+              value="10"
+            />
+            <label for="3to6monthscheck">3 to 6 months - $10 each</label>
+            <br />
+            <!-- this is a drop down combo select form -->
+            <label for="q36months">Quantity:</label>
+
+            <select name="q36months" id="q36months">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <br />
+            <br />
+
+            <input
+              class="radio"
+              id="6to9monthscheck"
+              name="6to9monthscheckboxlist"
+              type="checkbox"
+              value="15"
+            />
+            <label for="6to9monthscheck">6 to 9 months - $15 each</label>
+            <br />
+            <!-- this is a drop down combo select form -->
+            <label for="q69months">Quantity:</label>
+
+            <select name="q69months" id="q69months">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <br />
+            <br />
+          </fieldset>
+          <br />
+
+          <!-- this is a radio button select form -->
+          <fieldset>
+            <legend>Gift Wrapping</legend>
+            <input
+              class="radio"
+              id="giftwrapradio"
+              name="radiobutton"
+              type="radio"
+              value="giftwrapradio"
+            />
+            <label for="giftwrapradio">$10 gift wrapping</label>
+            <br />
+
+            <input
+              class="radio"
+              id="nogiftwrapradio"
+              name="radiobutton"
+              type="radio"
+              value="nogiftwrapradio"
+              checked
+            />
+
+            <label for="nogiftwrapradio">No gift wrap needed</label>
+            <br />
+          </fieldset>
+          <br />
+          <br />
+          <!-- this is the submit button -->
+          <fieldset>
+            <p>
+              <label for="btn-submit">Click to submit your order:</label><br />
+              <input type="submit" value="Submit Order" id="btn-submit" />
+            </p>
+            <!-- this is the cancel button to reset the form -->
+            <p>
+              <input type="reset" value="Cancel" id="btnreset" />
+            </p>
+            <!-- this div is assigned a class "thanks" in order to format the text
+            correctly when the query selector is used to replace it with the receipt information -->
+            <div class="thanks">
+              <p>Thank you for shopping Santa Monica Designs!</p>
+            </div>
+          </fieldset>
+          <br />
+        </form>
+      </main>
+
+      <nav>
+        <!-- This is an unordered list containing navigation information -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop Now</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- This is a footer, which typically contains information about the author of the section, copyright data or links to related documents -->
+      <footer>
+        <div>
+          Copyright &copy;2022-2023 - Santa Monica Designs - All rights reserved
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

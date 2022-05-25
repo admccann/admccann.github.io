@@ -1,0 +1,212 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* this sets the style for everything in the body of the page, unless overridden */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Libre Baskerville", serif;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* This styles the page headers */
+h1 {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 35px;
+}
+
+/* This styles the secondary headers */
+h2 {
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+h2.center {
+  text-align: center;
+}
+
+h3 {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* this adjusts the line height for all list items  */
+li {
+  line-height: 1.5;
+}
+
+/* this adjusts the text size and line height for the paragraph text */
+
+/* this sets the paragraph font size and line height */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Add padding to all of the .container child elements */
+.container > * {
+  padding: 20px;
+}
+
+/* this is to make the photo on the About Us page in the center */
+
+.center {
+  text-align: center;
+}
+/* this is an independent class to change the style */
+.container {
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+
+/* the following styles the page overall and creates a flex box style */
+header {
+  background: #760008e5;
+
+  flex: 1 0 100%;
+  order: 1;
+}
+main {
+  background: rgba(16, 56, 34, 0.856);
+  order: 3;
+  flex: 1 1 800px;
+}
+nav {
+  background: tan;
+  order: 2;
+  flex: 1 0 200px;
+}
+aside {
+  background: tan;
+  order: 4;
+  flex: 1 0 200px;
+}
+footer {
+  text-align: center;
+  background: #760008e5;
+  flex: 1 0 100%;
+  order: 5;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+/* this creates a grid style, applied to the gallery page */
+#product {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
+/* these style my navigation buttons */
+nav ul li {
+  list-style-type: none;
+  line-height: 45px;
+}
+
+nav li a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: rgba(16, 56, 34, 0.856);
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+  border-radius: 15px;
+  color: whitesmoke;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 10px rgba(7, 7, 7, 0.527);
+}
+
+/* this makes bullets in an unordered list square */
+ul {
+  list-style-type: square;
+}
+
+/* mouse over link */
+nav a:hover {
+  color: black;
+  background-color: darkgrey;
+}
+
+/* this is the independent class .col for the images wrapped in div tags in the gallery */
+.col {
+  background-color: rgb(112, 145, 120);
+  width: 120%;
+  overflow: hidden;
+}
+
+/* these are styling for fields, buttons and checkbox forms */
+form {
+  width: 66%;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(112, 145, 120);
+}
+
+label,
+select {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  line-height: 1.5;
+}
+
+.radio {
+  width: 15px;
+}
+
+textarea {
+  margin: auto;
+  width: 100%;
+  height: 200px;
+}
+button {
+  background-color: tan;
+  height: 30px;
+  width: 150px;
+  font-weight: bolder;
+  border-radius: 15%;
+  width: 100%;
+}
+
+legend {
+  padding-top: 20px;
+}
+
+/*-------------------media queries to make page responsive for iphone or smaller--------------------------- */
+@media screen and (max-width: 375px) {
+  figure img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .col {
+    background-color: rgb(112, 145, 120);
+    width: 100%;
+    overflow: hidden;
+  }
+  #product {
+    grid-template-columns: 300px;
+  }
+}
