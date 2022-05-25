@@ -1,0 +1,210 @@
+/* Color Theme Swatches in Hex */
+.POWER-RANGERS-COMIC-BOOK-SAMPLES-1-hex {
+  color: #f2f2f2;
+}
+.POWER-RANGERS-COMIC-BOOK-SAMPLES-2-hex {
+  color: #bfbfbf;
+}
+.POWER-RANGERS-COMIC-BOOK-SAMPLES-3-hex {
+  color: #8c8c8c;
+}
+.POWER-RANGERS-COMIC-BOOK-SAMPLES-4-hex {
+  color: #595959;
+}
+.POWER-RANGERS-COMIC-BOOK-SAMPLES-5-hex {
+  color: #0d0d0d;
+}
+
+/* Color Theme Swatches in Hex */
+.Colorsafe-crusaders-comic-book-1-hex {
+  color: #eef17b;
+}
+.Colorsafe-crusaders-comic-book-2-hex {
+  color: #8cb446;
+}
+.Colorsafe-crusaders-comic-book-3-hex {
+  color: #365f9b;
+}
+.Colorsafe-crusaders-comic-book-4-hex {
+  color: #f5a474;
+}
+.Colorsafe-crusaders-comic-book-5-hex {
+  color: #db4872;
+}
+
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* this sets the style for everything in the body of the page, unless overridden */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* This styles the page headers when used */
+
+/* This styles the secondary headers */
+h2 {
+  font-family: "Lora", serif;
+  font-size: 28px;
+
+  padding-bottom: 20px;
+}
+h2.center {
+  text-align: center;
+}
+
+h3 {
+  font-family: "Lora", serif;
+}
+
+/* this adjusts the line height for all list items  */
+li {
+  line-height: 1.5;
+}
+
+/* this adjusts the text size and line height for the paragraph text */
+/* this sets the paragraph font size and line height */
+p {
+  font-size: 25px;
+  line-height: 34px;
+}
+
+/* Add padding to all of the .container child elements */
+.container > * {
+  padding: 20px;
+}
+
+/* This is to add a drop shadow to an image, including png files */
+
+img {
+  -webkit-filter: drop-shadow(5px 5px 5px #504f4f);
+  filter: drop-shadow(5px 5px 5px #414141);
+}
+/* this is to make the photo on the About Us page in the center */
+.center {
+  text-align: center;
+}
+/* this is an independent class to change the style */
+.container {
+  color: #f2f2f2;
+  font-family: "Alegreya Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+
+/* the following styles the page overall and creates a flex box style */
+header {
+  background-image: url(../Images/Optimized/comic_headerR1.jpg);
+
+  flex: 1 0 100%;
+  order: 1;
+}
+main {
+  background: #595959;
+  order: 3;
+  flex: 1 1 800px;
+}
+nav {
+  background: #8c8c8c;
+  order: 2;
+  flex: 1 0 200px;
+}
+aside {
+  background: #8c8c8c;
+  order: 4;
+  flex: 1 0 200px;
+}
+footer {
+  text-align: center;
+  background: #595959;
+  font-size: 16px;
+  flex: 1 0 100%;
+  order: 5;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+/* this creates a grid style, applied to the gallery page */
+#product {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
+/* these style my navigation buttons */
+nav ul li {
+  list-style-type: none;
+  line-height: 45px;
+}
+
+nav li a {
+  padding: 4px 16px;
+  text-decoration: none;
+  background-color: #0d0d0d;
+  border-style: solid;
+  border-color: #8cb446;
+  border-width: 0.5px;
+  border-radius: 5px;
+  color: #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 10px rgba(7, 7, 7, 0.527);
+}
+
+/* this makes bullets in an unordered list square */
+ul {
+  list-style-type: square;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: black;
+  background-color: darkgrey;
+}
+nav a:hover {
+  color: black;
+  background-color: darkgrey;
+}
+
+/* this is the independent class .col for the images wrapped in div tags in the gallery */
+.col {
+  background-color: #365f9b;
+  width: 120%;
+  overflow: hidden;
+}
+
+/*-------------------media queries to make page responsive for iphone or smaller--------------------------- */
+/* @media screen and (max-width: 375px) {
+  figure img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .col {
+    background-color: rgb(112, 145, 120);
+    width: 100%;
+    overflow: hidden;
+  }
+  #product {
+    grid-template-columns: 300px;
+  }
+} */
