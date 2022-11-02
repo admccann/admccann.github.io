@@ -1,0 +1,225 @@
+/* COLOR PALETTE
+    #FC9F5B - medium orange
+    #FBD1A2 - light apricot
+    #F2EDCF - off white
+    #7DCFB6 - light aqua
+    #384D48 - dark blue gray */
+
+/* changed box sizing to initial to override w3css     */
+*,
+*:before,
+*:after {
+  box-sizing: initial;
+}
+/* Global styles
+---------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Header
+---------------------------------------------*/
+/* header {
+  background-color: #384d48;
+  color: #f2edcf;
+  padding: 20px;
+} */
+
+/* H1 heading *added font weight 800 to override w3css
+---------------------------------------------*/
+h1 {
+  font-family: "Playfair";
+  font-size: 4em;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+/* H2 headings - added font weight 600 to override w3css
+---------------------------------------------*/
+.main_content h2 {
+  font-family: "Playfair";
+  font-weight: 600;
+  font-size: 2em;
+  margin: 5px 0 0 0;
+  color: #384d48;
+  letter-spacing: 0.01em;
+}
+aside h2 {
+  font-family: "Playfair";
+  font-size: 2em;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #384d48;
+}
+
+/* map - adjusts the size of the div element that contains the Google map */
+#map {
+  height: 600px;
+  /* The height is 600 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+/* Navigation menu
+---------------------------------------------*/
+/* .navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+} */
+.nav_link {
+  margin-right: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+.nav_link:last-child {
+  margin-right: 0;
+}
+.nav_link a {
+  display: inline-block;
+  width: 100px;
+  padding: 5px 15px;
+  background-color: #fbd1a2;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-family: "Playfair";
+  font-size: 20px;
+  letter-spacing: 0.12em;
+}
+
+/* Main content
+---------------------------------------------*/
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main_content {
+  background-color: #f2edcf;
+  padding: 0 10px;
+}
+
+/* Sidebar
+---------------------------------------------*/
+aside {
+  background-color: #fbd1a2;
+  padding: 0 10px;
+}
+.latest_posts {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.post {
+  border: 2px solid white;
+  margin: 5px 0;
+  padding: 10px;
+}
+.post:first-child {
+  margin-top: 20px;
+}
+aside p {
+  text-align: center;
+}
+
+/* Images
+---------------------------------------------*/
+.post img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+/* Footer
+---------------------------------------------*/
+/* footer {
+  background-color: #384d48;
+  color: #f2edcf;
+  padding: 20px 10px 10px 10px;
+  font-size: 14px;
+} */
+
+/* Main content link states
+---------------------------------------------*/
+a:link {
+  color: #fc9f5b;
+}
+aside a:link {
+  color: #384d48;
+}
+a:visited {
+  color: #7dcfb6;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  color: #384d48;
+  text-decoration: none;
+}
+
+/* Navigation menu link states
+---------------------------------------------*/
+.nav_link a:link {
+  color: #384d48;
+  text-decoration: none;
+}
+.nav_link a:visited {
+  background-color: #384d48;
+  color: white;
+}
+.nav_link a:hover {
+  background-color: #7dcfb6;
+  color: #f2edcf;
+}
+.nav_link a:focus {
+  background-color: #7dcfb6;
+  color: #f2edcf;
+  outline: none;
+}
+.nav_link a:active {
+  background-color: #fc9f5b;
+}
+
+/* Footer link states
+---------------------------------------------*/
+footer a:link {
+  text-decoration: none;
+}
+footer a:visited {
+  color: #fbd1a2;
+}
+footer a:hover {
+  color: #f2edcf;
+}
+footer a:focus {
+  color: #f2edcf;
+  outline: 1px solid white;
+}
+footer a:active {
+  color: #7dcfb6;
+  outline: none;
+}
+
+/* Media queries
+---------------------------------------------*/
+@media screen and (max-width: 1199px) {
+  body {
+    max-width: 98%;
+  }
+}
